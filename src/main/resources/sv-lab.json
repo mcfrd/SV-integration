@@ -1,0 +1,29 @@
+{
+  "virtualLab": [
+    {
+      "id": "virtual-lab:9009",
+      "displayName": "Android Lab",
+      "applicationModelId": "GadgetBridgeApplicationModel",
+      "connector": [
+        {
+          "id": "connector",
+          "connectorType": "mobileApi",
+          "properties": {
+            "bindPort": 9009
+          }
+        }
+      ],
+      "virtualServiceInstance": [
+        {
+          "virtualServiceId": "MiBand2ServiceInterface",
+          "serviceMode": "SIMULATE_SERVICE",
+          "endpoints": [
+            {
+              "connectorId": "connector"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
